@@ -1,0 +1,3 @@
+INSERT INTO card_info VALUES(null,'higiene e limpeza',2.65,'sabonete dove 30g');
+INSERT INTO card_info VALUES(null,'higiene e limpeza',2.37,'sabonete albany 30g');
+INSERT INTO card_info VALUES(null,'higiene e limpeza',7.69,'creme dental colgate 300g');

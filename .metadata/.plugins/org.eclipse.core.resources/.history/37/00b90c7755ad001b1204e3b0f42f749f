@@ -1,0 +1,22 @@
+package com.card.card.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.card.card.entities.Card;
+import com.card.card.repository.CardRepository;
+
+@Service
+public class CardService {
+
+	@Autowired
+	CardRepository repository;
+	
+	public List<Card> getData(){
+		return repository.findAll();
+	}
+	
+	
+}

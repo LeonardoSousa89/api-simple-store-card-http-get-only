@@ -1,0 +1,30 @@
+package com.card.card.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.card.card.entities.Card;
+import com.card.card.repository.CardRepository;
+
+@Service
+public class CardService {
+
+	@Autowired
+	CardRepository repository;
+	
+	@Transactional
+	public List<Card> getData(){
+		List<Card> card = repository.findAll();
+		return card;
+	}
+	
+	@Transactional
+	public Card insert(Card obj) {
+		Card elemento = new Card(obj.getId(), obj.getTitulo(), obj.getCategoria(), obj.getPreco());
+		Card novo_objeto = repository.saveAndFlush(elemento);
+		return novo_objeto;
+	}
+}

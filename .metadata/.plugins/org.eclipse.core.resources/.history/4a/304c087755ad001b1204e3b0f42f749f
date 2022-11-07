@@ -1,0 +1,17 @@
+package com.card.card;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.card.card.service.CardService;
+
+@SpringBootApplication
+public class CardApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CardApplication.class, args);
+	}
+	
+	CardService service = new CardService();
+	service.getData();
+}

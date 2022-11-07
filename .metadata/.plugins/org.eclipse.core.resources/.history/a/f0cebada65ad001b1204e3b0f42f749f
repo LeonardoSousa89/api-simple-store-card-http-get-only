@@ -1,0 +1,14 @@
+/* h2 */
+INSERT INTO card_info VALUES(null,'higiene e limpeza',2.65,'sabonete dove 30g');
+INSERT INTO card_info VALUES(null,'higiene e limpeza',2.37,'sabonete albany 30g');
+INSERT INTO card_info VALUES(null,'higiene e limpeza',7.69,'creme dental colgate 300g');
+INSERT INTO card_info VALUES(null,'bebida',155.67,'whisky johnny walker, red label');
+
+
+/* postgres */
+INSERT INTO card_info VALUES(1,'higiene e limpeza',2.65,'sabonete dove 30g');
+INSERT INTO card_info VALUES(2,'higiene e limpeza',2.37,'sabonete albany 30g');
+INSERT INTO card_info VALUES(3,'higiene e limpeza',7.69,'creme dental colgate 300g');
+INSERT INTO card_info VALUES(4,'bebida',155.67,'whisky johnny walker, red label');
+
+/* SELECT * FROM card_info */
